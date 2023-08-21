@@ -1,0 +1,15 @@
+import random
+secenek = []
+a = input("BİLGE RANDOM'a hoş geldiniz eklemek istediğiniz seçeneği yazın:")
+secenek.append(a)
+a = input("Eklemek istediğiniz seçeneği yazın:")
+secenek.append(a)
+
+while (a != 'bitir'):
+ a = input("Eklemek istediğiniz seçeneği yazın(bitirmek için lütfen küçük harflerle 'bitir' yazıp enter'a basın):")
+ secenek.append(a)
+
+if(a == 'bitir'):
+ print(random.choice(secenek))
+if(random.choice(secenek) == 'bitir'):
+ print(random.choice(secenek))
